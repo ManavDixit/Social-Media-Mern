@@ -1,0 +1,31 @@
+#NavBar{
+    position: fixed;
+    bottom:5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: bottom .5s ease-in-out .25s;
+}
+#NavBar ul{
+    width: 70%;
+    background: white;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    list-style: none;
+}
+#NavBar ul li{
+    list-style: none;
+}
+#NavBar ul li a{
+    padding: 15px;
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+    color:var(--primary);
+}
+#NavBar ul li a:hover{
+  color:var(--secondary);  
+}

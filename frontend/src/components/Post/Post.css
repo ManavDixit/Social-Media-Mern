@@ -1,0 +1,98 @@
+.Post{
+    margin:3%;
+    height: 500px;
+    box-shadow: 8px 8px 10px var(--box-shadow);
+    display: block;
+    width:80%;
+    border: 2px solid grey;
+    border-radius: 10px;
+    overflow:hidden;
+    cursor: pointer;
+}
+.Post .user{
+    width:100%;
+    height: 10%;
+    display:flex;
+    align-items: center;
+    border-bottom: 2px solid var(--secondary);
+}
+.Post .user h4{
+    height:35px;
+    width:35px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    border-radius: 50%;
+}
+.Post .user p{
+    color:var(--secondary);
+    text-decoration:underline;
+}
+.Post .user p:hover{
+    color:var(--primary);
+} 
+.Post .timeAgo{
+    width: 100%;
+}
+.Post .timeAgo p{
+    color:var(--primary);
+    font-size: smaller;
+    margin-left: 10px;
+}
+.postImageContainer{
+    width: 100%;
+    height: 60%;
+    max-height: 100%;
+    padding: 10px;
+
+}
+.postImageContainer img{
+    height:100%;
+    width: 100%;
+    display:block;
+    border-radius: 5px;
+    display: block;
+}
+.Post .title{
+    padding: 10px;
+    display: block;
+    width: 100%;
+    font-size: larger;
+    font-weight: bolder;
+    border-bottom: 2px solid grey;
+    color:var(--secondary)
+}
+.Post .likeAndCommentSection{
+    padding: 10px;
+}
+.Post .likeAndCommentSection ul{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Post .likeAndCommentSection ul li{
+    padding:1%;
+    list-style: none;
+    font-size: larger;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:var(--primary);
+}
+.Post .likeAndCommentSection ul li:hover{
+    color:var(--secondary);
+}
+.Post .likeAndCommentSection ul li p{
+    font-size: small;
+    margin:10%;
+}
+@media only screen and (min-width:720px){
+    .Post{
+        width:25%;
+    }
+}
